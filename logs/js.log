@@ -1,0 +1,22 @@
+[2020-08-06T13:04:42.937] [INFO] MAIN - *****Node crawler START*****
+[2020-08-06T13:04:42.947] [ERROR] fileList - Error: no File /arrowsearch/mount/*
+    at Promise (/home/arrowsearch/src/createhtml.js:30:15)
+    at new Promise (<anonymous>)
+    at exports.fileList (/home/arrowsearch/src/createhtml.js:12:10)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+    at Function.Module.runMain (module.js:695:11)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[2020-08-06T13:04:42.948] [ERROR] fileList - ERROR *****Node crawler END*****
+[2020-08-07T16:21:17.537] [INFO] MAIN - *****Node crawler START*****
+[2020-08-07T16:21:17.542] [ERROR] fileList - Error: no File /arrowsearch/mount/*
+    at Promise (/home/arrowsearch/src/createhtml.js:30:15)
+    at new Promise (<anonymous>)
+    at exports.fileList (/home/arrowsearch/src/createhtml.js:12:10)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+    at Function.Module.runMain (module.js:695:11)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+[2020-08-07T16:21:17.544] [ERROR] fileList - ERROR *****Node crawler END*****
