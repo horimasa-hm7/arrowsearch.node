@@ -1,0 +1,35 @@
+{
+  "appenders": {
+    "file": {
+      "type": "fileSync",
+      "filename": "./logs/js.log",
+      "maxLogSize": 20480,
+      "backups": 10
+    },
+    "stdout": {
+      "type": "stdout"
+    },
+    "ibmcrawler": {
+      "type": "dateFile",
+      "filename": "./logs/ibmcrawler.log",
+      "pattern": ".yyyy-MM-dd",
+      "daysToKeep": 10
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "file",
+        "stdout"
+      ],
+      "level": "all"
+    },
+    "ibmcrawler": {
+      "appenders": [
+        "ibmcrawler",
+        "stdout"
+      ],
+      "level": "all"
+    }
+  }
+}

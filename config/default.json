@@ -1,0 +1,37 @@
+{
+  "Directory": {
+    "root": "/home/arrowsearch/mount",
+    "storage": "/home/arrowsearch/storage"
+  },
+  "Regexp": {
+    "noteshtmold": ".*?/[0-9a-zA-Z]{6,}.(htm|HTM)$",
+    "noteshtm": "^/home/arrowsearch/mount/notes/.*?/[0-9a-zA-Z]{6,}.(htm|HTM)$",
+    "file": "^/home/arrowsearch/mount/(fileserver|split)/.*?.(xlsx|XLSX|xls|XLS|ppt|PPT|pptx|PPTX|doc|DOC|docx|DOCX|pdf|PDF|htm|HTM|html|HTML|txt|TXT|eml|EML)$",
+    "split": "^/home/arrowsearch/mount/split",
+    "attach": ".*?.(xlsx|XLSX|xls|XLS|ppt|PPT|pptx|PPTX|doc|DOC|docx|DOCX|pdf|PDF)$"
+  },
+  "Shellcmd": {
+    "crawler": "cd /home/{username}/DataCrawler;crawler refresh",
+    "mount": "mount"
+  },
+  "Link": {
+    "notes": {
+      "{DB名1}": "{path}",
+      "{DB名2}": "{path}"
+    },
+    "split": {
+      "{mount1}": "{path}",
+      "{moutn2}": "{path}"
+    }
+  },
+  "MYSQL": {
+    "host": "{dbname}.mysql.database.azure.com",
+    "user": "mysqluser@{dbname}",
+    "password": "MyS9lU$er",
+    "port": 3306,
+    "database": "watson_search_system",
+    "ssl":"/home/arrowsearch/config/ssl/DigiBalRoot.crt.pem",
+    "sqlcmd1": "LOAD DATA LOCAL INFILE '/home/arrowsearch/link.csv' INTO TABLE document_list FIELDS TERMINATED BY ',' ENCLOSED BY '\"' (document_id, document_path);",
+    "sqlcmd2": "update document_list set create_date=now(), update_date=now();"
+  }
+}
